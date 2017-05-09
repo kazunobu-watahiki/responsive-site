@@ -1,7 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Ravi+Prakash');
+
+html{
+    font-size: 62.5%; 
+    font-family: 'Ravi Prakash', cursive;
+}
+
 /*共通事項*/
+
 .text-center {
     text-align: center;
 }
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 11rem;
+    color: white;
+    text-align: right;
+    line-height: 500px;
+    padding-right: 4rem;
+}
+
+h2 {
+    width: 40rem;
+    height: 7rem;
+    line-height: 8.5rem;
+    font-size: 6rem;
+    border: 8px solid black;
+    border-radius: 40px;
+    margin: 6rem auto;
+}
+
+h3 {
+    font-size: 4rem;
+    color: white;
+    padding: 1.5rem;
+    /*background-color: #eee;*/
+    margin:0 1rem;
+}
+
+h4 {
+    font-size: 3rem;
+}
+
+/*ヘッダー*/
 
 header {
     background-image: url(images/cat.jpg);
@@ -10,48 +54,88 @@ header {
     height: 500px;
 }
 
+/*メインコンテンツ*/
+
 main {
     margin-bottom: 5rem;
 }
 
-h2 {
-    font-size: 2rem;
-    margin: 4rem auto;
-}
-
-h3 {
-    padding: 1.5rem;
-    background-color: #eee;
-    margin:0 1rem;
-}
-
 .textbox {
     margin-bottom: 2rem;
+    height: 20rem;
 }
 
 .textbox p {
     padding: 1.5rem;
-    background-color: #999;
+    /*background-color: #999;*/
     margin:0 1rem;
     height: 5rem;
+    position: absolute;
+    top: 75%;
+    right:5%;
+    color: white;
+    font-size: 3rem;
 }
 
 .container {
     width: 90%;
     margin: 0 auto;
+    display: flex;
+    justify-content:space-between;
 }
 
-.container {
-    display: flex;
+
+.textbox a {
+    display: block;    
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    position: relative;
 }
 
 .textbox {
-    width: 33.3%;
+    width: 30%;
 }
 
+.textbox a:hover {
+    background-color: rgba(0,0,0,.6);
+}
+
+.cat_white {
+    background-image: url(images/cat_white.jpg);
+    background-size: cover;
+}
+
+.cat_black {
+    background-image: url(images/cat_black.jpg);
+    background-size: cover;
+}
+
+.cat_double {
+    background-image: url(images/cat_double.jpg);
+    background-size: cover;
+}
+
+.tortoiseshell {
+    background-image: url(images/tortoiseshell.jpg);
+    background-size: cover;
+}
+
+.mike {
+    background-image: url(images/mike.jpg);
+    background-size: cover;
+}
+
+.red_tabby {
+    background-image: url(images/red_tabby.jpg);
+    background-size: cover;
+}
+
+
+/*フッター*/
 footer {
     background-color: #eee;
-    height: 150px;
+    padding-top: 2rem;
 }
 
 footer h4 {
@@ -68,9 +152,53 @@ footer p {
     border-radius: 5px;
 }
 
+footer small {
+    font-size: 2rem;
+    padding: 2rem;
+    display: block;
+    text-align: center;
+    
+}
+
+.cat_button {
+    width: 7rem;
+    height: 7rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+}
+
+.cat_button img {
+    width: 5rem;
+    height: 5rem;
+    margin-top: 1rem;
+}
+
+.cat_button:hover {
+    background-color: rgba(0,0,0,.7);
+}
+
+/*モバイル用デザイン*/
+
 @media (max-width: 768px) {
     header {
         height: 250px;
+    }
+
+    h1 {
+        font-size: 5rem;
+        line-height: 100px;
+    }
+
+    h2 {
+        width: 80%;
+        height: 4rem;
+        line-height: 5rem;
+        font-size: 4rem;
+        border: 8px solid black;
+        border-radius: 40px;
+        margin: 4rem auto;
     }
 
   .container {
@@ -80,4 +208,12 @@ footer p {
   .textbox {
       width: 100%
   }
+  
+  .textbox a {
+      background-color: rgba(0,0,0,.6);
+  }
+  
+    .cat_button {
+      background-color: rgba(0,0,0,.6);
+    }  
 }
